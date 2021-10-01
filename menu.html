@@ -28,20 +28,47 @@
 
 <body>
     <h2>Logo to be added</h2>
-    <header class="header sticky-top">
+    <h4>Logo to be added</h4>
+    <!-- Creating navigation for desktop -->
+    <header class="desktopNav" data-spy="scroll" data-target=".navbar" data-offset="60">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+          <a class="navbar-brand" href="#">Food Hut</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html" aria-current="page">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Order Status</a>
+                  </li>
+                  <li class="nav-item" >
+                      <a class="nav-link" href="order.html">Cart</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+    <!-- Moile Navigation -->
+    <header class="header sticky-top mobileNav"">
       <!-- Creating the navigation bar -->
         <nav>
            <nav class="customNav">
-              <a href="index.html">
+              <a href="index.html" aria-current="page">
                   <ion-icon name="home"></ion-icon>
                   <span class="caption">Home</span>
               </a>
-              <a href="menu.html" aria-current="page">
-                <ion-icon name="fast-food-outline"></ion-icon>
+              <a href="menu.html">
+                <ion-icon name="fast-food-outline" ></ion-icon>
                   <span class="caption">Menu</span>
               </a>
               <a href="#">
-                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <ion-icon name="hourglass-outline" style="padding-left: 2rem;"></ion-icon>
                   <span class="caption">Order Status</span>
               </a>
               <a href="order.html">

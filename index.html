@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
   <!-- Required meta tags -->
-    <!-- <title>Document</title> -->
-<!-- <title>Document</title> -->
-  <!-- <title>Document</title> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,12 +20,45 @@
     <!-- Linking CSS Files -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    
 </head>
 
 
 <body>
-    <h2>Logo to be added</h2>
-    <header class="header sticky-top">
+    <h4>Logo to be added</h4>
+    <!-- Creating navigation for desktop -->
+    <header class="desktopNav" data-spy="scroll" data-target=".navbar" data-offset="60">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+          <a class="navbar-brand" href="#">Food Hut</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="index.html" aria-current="page">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Order Status</a>
+                  </li>
+                  <li class="nav-item" >
+                      <a class="nav-link" href="order.html">Cart</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </header>
+    <!-- Moile Navigation -->
+    <header class="header sticky-top mobileNav"">
       <!-- Creating the navigation bar -->
         <nav>
            <nav class="customNav">

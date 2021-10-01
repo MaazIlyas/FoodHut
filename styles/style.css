@@ -29,20 +29,74 @@ h2, h3, h4 {
     padding-bottom: 8px;
 }
 
-/* ion-icon {
-    color: #fff; 
-} */
+/*  ******* Desktop Header + Navigation ******* */
+
+.navbar {
+	background-color: #182c39;
+    border-color: rgb(51, 17, 0);
+	border-color: rgba(51, 17, 0, 0.2);
+	/* font-family: ; */
+	font-weight: 700;
+	padding: 15px 0;
+	transition: padding .5s;
+}
+
+.navbar .navbar-brand {
+	color: #fff;
+	font-family: 'Leckerli One', cursive;
+	font-weight: 500;
+	text-transform: none;
+	font-size: 25px;
+	padding-left: 15px;
+	text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+	color: #ffc266;
+	transition: color 1s;
+}
+
+.navbar .navbar-nav {
+	padding-right: 50px;
+}
+
+.navbar .navbar-nav > li > a {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	color: #fff;
+	margin: auto 5px;
+    font-family: 'Lato', sans-serif; 
+    text-shadow: #222 0.3em 0.3em 0.3em;   
+}
+
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus:hover {
+	color: #ffc266;
+	transition: color 1s; 
+}
 
 
-/* Testing */
-/* .navbar {
-    display: block;
-    padding: 0 6rem 0;
-} */
+.navbar .navbar-nav > li.active > a:hover,
+.navbar .navbar-nav > li.active > a:focus:hover {
+	background-color: transparent;
+}
+
+.navbar.scrolled {
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+	padding: 5px 0;
+	opacity: 0.9;
+}
 
 .social ion-icon {
     padding: 0 8px;
     font-size: 40px;
+}
+/* Mobile Navigation Menu */
+
+.mobileNav {
+    display: none;
 }
 
 [aria-current="page"] { /* disables current page's link */
@@ -137,12 +191,12 @@ h2, h3, h4 {
 .footer{
     padding: 20px 40px;
     color: #fff;
-    background-color: purple;
+    background-color: rgb(31, 29, 29);
 }
 .header {
     padding: 0.5rem;
     color: #fff;
-    background-color: purple;
+    background-color: rgb(31, 29, 29);
 }
 
 .footer {
@@ -330,7 +384,7 @@ h2, h3, h4 {
         background-color: #26fdc7;
         transition: .1s ease-out;
     }
-    
+
     .button-order:active {
         transform: scale(0.98, 0.98);
         transition: .01s linear;
@@ -338,22 +392,16 @@ h2, h3, h4 {
 
 /* Mobile View */
 @media (max-width: 991px) {
-    /* Header */
-    /* .header {
-        padding: 20px;
-    } */
-
-    /* Header Elements */
-
-    /* .header .logo, .company, .order-text {
-        display: none; /* hides elements */
-    /* } */ 
-
+    .mobileNav {
+        display: block;
+    }
+    .desktopNav {
+        display: none;
+    }
     .counters {
         padding: 20px 0;
         font-size: 24px;
     }
-    
     .menu-toggle ion-icon, .logo ion-icon, .order ion-icon {
         font-size: 60px;
     }
@@ -412,10 +460,5 @@ h2, h3, h4 {
     0% {
         opacity: 0;
         bottom: 10px;
-    }a
-
-    /* 100% {
-        opacity: 1;
-        bottom: 0;
-    } */
+    }
 }
