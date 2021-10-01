@@ -40,6 +40,22 @@ h2, h3, h4 {
     padding: 0 6rem 0;
 } */
 
+.social ion-icon {
+    padding: 0 8px;
+    font-size: 40px;
+}
+
+[aria-current="page"] { /* disables current page's link */
+    pointer-events: none;
+    cursor: default;
+    /* background-color: #fa3636; */
+    padding: 5px;
+}
+
+[aria-current="page"] ion-icon {
+    opacity: 0.5;
+}
+
 .customNav {
     position: relative;
     display: flex;
@@ -53,7 +69,9 @@ h2, h3, h4 {
     display: inline-block;
     text-decoration: none;
     color: white;
+    opacity: 1;
 }
+
 .caption {
     display: block;
 }
@@ -180,42 +198,6 @@ h2, h3, h4 {
         font-size: 80px;
         color: #26fdc7;
     }
-
-/* Navigation */
-
-/* .top-nav {
-    padding: 20px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links a{
-    padding: 8px 16px;
-    display: block;
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-} */
-
-.social ion-icon {
-    padding: 0 8px;
-    font-size: 40px;
-}
-
-/* .nav-links a:hover, .counters a:hover, .social ion-icon:hover {
-    color: #fa3636;
-    transition: .1s linear;
-} */
-
-[aria-current="page"] { /* disables current page's link */
-    pointer-events: none;
-    cursor: default;
-    /* background-color: #fa3636; */
-    padding: 5px;
-}
 
 /* Content */
 .banner-attribution {
@@ -424,8 +406,8 @@ h2, h3, h4 {
         bottom: 10px;
     }a
 
-    100% {
+    /* 100% {
         opacity: 1;
         bottom: 0;
-    }
+    } */
 }
