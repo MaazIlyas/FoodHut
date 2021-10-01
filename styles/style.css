@@ -52,8 +52,8 @@ h2, h3, h4 {
     padding: 5px;
 }
 
-[aria-current="page"] ion-icon {
-    opacity: 0.5;
+[aria-current="page"] ion-icon, [aria-current="page"] span {
+    color: yellow;
 }
 
 .customNav {
@@ -69,7 +69,6 @@ h2, h3, h4 {
     display: inline-block;
     text-decoration: none;
     color: white;
-    opacity: 1;
 }
 
 .caption {
@@ -340,15 +339,15 @@ h2, h3, h4 {
 /* Mobile View */
 @media (max-width: 991px) {
     /* Header */
-    .header {
+    /* .header {
         padding: 20px;
-    }
+    } */
 
     /* Header Elements */
 
-    .header .logo, .company, .order-text {
+    /* .header .logo, .company, .order-text {
         display: none; /* hides elements */
-    }
+    /* } */ 
 
     .counters {
         padding: 20px 0;
@@ -396,6 +395,15 @@ h2, h3, h4 {
     /* Components */
     .card-image {
         max-height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .customNav ion-icon {
+        font-size: 28px;
+    }
+    .customNav span{
+        display: none;
     }
 }
 
