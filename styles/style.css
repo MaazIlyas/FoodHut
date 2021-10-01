@@ -120,12 +120,12 @@ h2, h3, h4 {
 .footer{
     padding: 20px 40px;
     color: #fff;
-    background-color: black;
+    background-color: purple;
 }
 .header {
     padding: 0.5rem;
     color: #fff;
-    background-color: rgb(255, 137, 137);
+    background-color: purple;
 }
 
 .footer {
