@@ -29,8 +29,41 @@ h2, h3, h4 {
     padding-bottom: 8px;
 }
 
-ion-icon {
-    color: #fff; /* default icon color */
+/* ion-icon {
+    color: #fff; 
+} */
+
+
+/* Testing */
+/* .navbar {
+    display: block;
+    padding: 0 6rem 0;
+} */
+
+.customNav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem 0;
+}
+
+.customNav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+.caption {
+    display: block;
+}
+
+.customNav ion-icon {
+    font-size: 32px;
+}
+
+.sticky-top {
+    background-color: #012169;
 }
 
 /*-----scroll-top-----*/
@@ -84,8 +117,13 @@ ion-icon {
 }
 
 /* Header and Footer */
-.header, .footer{
+.footer{
     padding: 20px 40px;
+    color: #fff;
+    background-color: #012169;
+}
+.header {
+    padding: 0.5rem;
     color: #fff;
     background-color: #012169;
 }
@@ -145,7 +183,7 @@ ion-icon {
 
 /* Navigation */
 
-.top-nav {
+/* .top-nav {
     padding: 20px;
 }
 
@@ -160,23 +198,23 @@ ion-icon {
     font-size: 20px;
     text-decoration: none;
     color: #fff;
-}
+} */
 
 .social ion-icon {
     padding: 0 8px;
     font-size: 40px;
 }
 
-.nav-links a:hover, .counters a:hover, .social ion-icon:hover {
+/* .nav-links a:hover, .counters a:hover, .social ion-icon:hover {
     color: #fa3636;
     transition: .1s linear;
-}
+} */
 
 [aria-current="page"] { /* disables current page's link */
     pointer-events: none;
     cursor: default;
-    background-color: #fa3636;
-    border-radius: 4px;
+    /* background-color: #fa3636; */
+    padding: 5px;
 }
 
 /* Content */
@@ -384,7 +422,7 @@ ion-icon {
     0% {
         opacity: 0;
         bottom: 10px;
-    }
+    }a
 
     100% {
         opacity: 1;

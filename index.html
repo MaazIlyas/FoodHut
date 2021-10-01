@@ -37,35 +37,40 @@
     <!-- Linking CSS Files -->
     <!-- <link href="styles/style.css" rel="stylesheet"> -->
     <!-- <link href="styles/index.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index.css">
 
     <!-- Linking jQuery and Bootstrap for Carousel -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 
 
 <body>
-    <header>
+
+    <header class="header sticky-top">
       <!-- Creating the navigation bar -->
         <nav>
-            <div class="logo"><img src="images/logo.png" alt="logo"></div>
-            <div class="navZone" id="mynavZone">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="location.html">Location</a></li>
-                    <li><a href="meal.html">Pick Me A Meal</a></li>
-                </ul>
-            </div>
-            <a href="#" class="toggleButton">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-        </nav>
-    </header>
+           <nav class="customNav">
+              <a href="index.html" aria-current="page">
+                  <ion-icon name="home"></ion-icon>
+                  <span class="caption">Home</span>
+              </a>
+              <a href="projects.html">
+                <ion-icon name="fast-food-outline"></ion-icon>
+                  <span class="caption">Menu</span>
+              </a>
+              <a href="tools.html">
+                  <ion-icon name="hourglass-outline"></ion-icon>
+                  <span class="caption">Order Status</span>
+              </a>
+              <a href="settings.html">
+                  <ion-icon name="cart"></ion-icon>
+                  <span class="caption">Cart</span>
+              </a>
+             </nav>
+          </nav>
+      </header>
 
     <main>
         <div class="container">
@@ -160,28 +165,97 @@
             </div>
             <hr>
           </div>
-
+        </section>
+        <section>
+          <div class="aboutus-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="aboutus">
+                            <h2 class="aboutus-title">About Us</h2>
+                            <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                            <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                            <a class="aboutus-more" href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="aboutus-banner">
+                            <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/about1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="feature">
+                            <div class="feature-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <span class="glyphicon glyphicon-cog icon"></span>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Work with heart</h4>
+                                        <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <span class="glyphicon glyphicon-cog icon"></span>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Reliable services</h4>
+                                        <p>Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-box">
+                                <div class="clearfix">
+                                    <div class="iconset">
+                                        <span class="glyphicon glyphicon-cog icon"></span>
+                                    </div>
+                                    <div class="feature-content">
+                                        <h4>Great support</h4>
+                                        <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
 
     </main>
 
     <section></section>
     <!-- Adding the footer -->
-    <footer>
-        <div class="logo"><img src="images/logo.png" alt="logo"></div>
-        <p>Find us on:</p>
-        <div class="footerZone">
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
-        </div>
-        <p>&copy; Maaz Ilyas</p>
-    </footer>
+    <!-- Footer -->
+    <footer class="footer">
+      <a class="logo" href="index.html">
+          <ion-icon name="fast-food"></ion-icon>
+      </a>
+      <p>Find Us On</p>
+      <div class="social">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+      <p>&copy; 2021 Food Hut</p>
+      <div class="scroll-top-wrapper ">
+          <span class="scroll-top-inner">
+            <ion-icon name="triangle"></ion-icon>
+          </span>
+       </div>
+  </footer>
 
     <!-- Linking the js file -->
     <script src="index.js"> </script>
+
+    <!-- Ionicons -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
+
+    <!-- Linking Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 
     <!-- Linking Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
