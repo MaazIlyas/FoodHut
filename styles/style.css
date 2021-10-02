@@ -15,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     line-height: 1.6em;
@@ -293,9 +292,9 @@ h2, h3, h4 {
     color: #000;
 }
 
-.container-fluid {
+/* .container-fluid {
     padding: 16px;
-}
+} */
 
 /* Components */
 
@@ -458,11 +457,6 @@ h2, h3, h4 {
     .container {
         margin:auto;
         width: 95%;
-    }
-
-    /* Components */
-    .card-image {
-        max-height: 100%;
     }
 }
 

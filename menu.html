@@ -48,8 +48,14 @@
                   <li class="nav-item">
                       <a class="nav-link" href="#">Order Status</a>
                   </li>
-                  <li class="nav-item" >
-                      <a class="nav-link" href="order.html">Cart</a>
+                  <li class="nav-item cart" >
+                      <a class="nav-link" href="order.html">
+                          <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                      </a>
+
+                      <!-- old code for item numbers and cost -->
+                      <!-- <p class="cart"><span>0</span> <span class="order-text">Item(s)</span> | $<span>0</span><br>
+                        <a class="order-text" href="order.html">View Your Order</a></p> -->
                   </li>
               </ul>
           </div>
@@ -132,7 +138,7 @@
                                                                             </div>
                                                                             <input type="text" class="form-control input-manulator" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="0">
                                                                             <div class="input-group-append">
-                                                                                <button class="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
+                                                                                <button class="btn btn-outline-secondary add-btn add-cart" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -173,7 +179,7 @@
                                                                             </div>
                                                                             <input type="text" class="form-control input-manulator" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="0">
                                                                             <div class="input-group-append">
-                                                                                <button class="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
+                                                                                <button class="btn btn-outline-secondary add-btn add-cart" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -214,7 +220,7 @@
                                                                             </div>
                                                                             <input type="text" class="form-control input-manulator" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="0">
                                                                             <div class="input-group-append">
-                                                                                <button class="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
+                                                                                <button class="btn btn-outline-secondary add-btn add-cart" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -255,7 +261,7 @@
                                                                             </div>
                                                                             <input type="text" class="form-control input-manulator" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="0">
                                                                             <div class="input-group-append">
-                                                                                <button class="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
+                                                                                <button class="btn btn-outline-secondary add-btn add-cart" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -296,7 +302,7 @@
                                                                             </div>
                                                                             <input type="text" class="form-control input-manulator" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="0">
                                                                             <div class="input-group-append">
-                                                                                <button class="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
+                                                                                <button class="btn btn-outline-secondary add-btn add-cart" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -335,9 +341,11 @@
                                                                             <div class="input-group-prepend">
                                                                                 <button class="btn btn-outline-secondary minus-btn" type="button" id="button-addon1"><i class="fa fa-minus"></i></button>
                                                                             </div>
+
+                                                                            <!-- buttons here -->
                                                                             <input type="text" class="form-control input-manulator" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="0">
                                                                             <div class="input-group-append">
-                                                                                <button class="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
+                                                                                <button class="btn btn-outline-secondary add-btn add-cart" type="button" id="button-addon1"><i class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -422,6 +430,7 @@
 
       <!-- Linking the js file -->
     <script src="scripts/menu.js"> </script>
+    <script src="scripts/order.js"> </script>
 
     <!-- Linking Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
