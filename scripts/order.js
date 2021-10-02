@@ -90,7 +90,7 @@ function cartTotalCost () {
 //If the page refreshes, the cart number on munu cart remains with this function.
 function onLoadCartShow() {
     let productNumbers = localStorage.getItem('cartCounts');
-    let productCost = localStorage.getItem('totalCost');
+    // let productCost = localStorage.getItem('totalCost');
 
     if (productNumbers)
     {
