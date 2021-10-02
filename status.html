@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="authors" content="Maaz Ilyas">
     <meta name="description" content="Food Hut">
-    <title>Food Hut - Cart</title>
+    <title>Food Hut - Order Status</title>
     <link href="images/favicon.png" rel="shortcut icon" type="image/png">
 
     <!-- Linking Bootstrap CSS -->
@@ -23,7 +23,7 @@
 
     <!-- Linking CSS Files -->
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/order.css">
+    <link rel="stylesheet" href="styles/status.css">
 </head>
 
 <body>
@@ -40,23 +40,23 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home</a>
+                      <a class="nav-link" href="index.html" >Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="menu.html">Menu</a>
+                      <a class="nav-link" href="menu.html" >Menu</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="status.html">Order Status</a>
+                      <a class="nav-link" href="#">Order Status</a>
                   </li>
                   <li class="nav-item cart" >
-                    <a class="nav-link" href="order.html">
-                        <ion-icon name="basket"></ion-icon>Cart <span>0</span>
-                    </a>
+                      <a class="nav-link" href="order.html">
+                          <ion-icon name="basket"></ion-icon>Cart <span>0</span>
+                      </a>
 
-                    <!-- old code for item numbers and cost -->
-                    <!-- <p class="cart"><span>0</span> <span class="order-text">Item(s)</span> | $<span>0</span><br>
-                      <a class="order-text" href="order.html">View Your Order</a></p> -->
-                 </li>
+                      <!-- old code for item numbers and cost -->
+                      <!-- <p class="cart"><span>0</span> <span class="order-text">Item(s)</span> | $<span>0</span><br>
+                        <a class="order-text" href="order.html">View Your Order</a></p> -->
+                  </li>
               </ul>
           </div>
       </nav>
@@ -70,15 +70,15 @@
                   <ion-icon name="home"></ion-icon>
                   <span class="caption">Home</span>
               </a>
-              <a href="menu.html">
-                <ion-icon name="fast-food-outline" ></ion-icon>
+              <a href="menu.html" aria-current="page">
+                <ion-icon name="fast-food-outline"></ion-icon>
                   <span class="caption">Menu</span>
               </a>
-              <a href="status.html">
+              <a href="#">
                   <ion-icon name="hourglass-outline" style="padding-left: 2rem;"></ion-icon>
                   <span class="caption">Order Status</span>
               </a>
-              <a href="order.html" aria-current="page">
+              <a href="order.html">
                   <ion-icon name="cart"></ion-icon>
                   <span class="caption cart2">Cart <span>0</span></span>
               </a>
@@ -86,28 +86,13 @@
           </nav>
       </header>
 
-          <!-- Content -->
-        <main>
-            <div class="container-fluid">
-                <div class="row">
-                    <h2 class="page-title">Your Order</h2>
-                    <hr>
-                    <section>
-                        <div class="products-container">
-                            <div class="product-header">
-                                <h5 class="product-title">PRODUCT</h5>
-                                <h5 class="price">PRICE</h5>
-                                <h5 class="quantity">QUANTITY</h5>
-                                <h5 class="total">TOTAL</h5>
-                            </div>
-                            <div class="products">
-                            </div>
-                        </div>
-                    </section>
-                    <hr>
-                </div>
-            </div>
-        </main>
+
+      <main>
+            <h1>
+                Coming Soon
+            </h1>
+      </main>
+
 
       <!-- Adding the footer -->
     <!-- Footer -->
@@ -131,7 +116,7 @@
 
 
       <!-- Linking the js file -->
-    <script src="scripts/index.js"> </script>
+    <!-- <script src="scripts/menu.js"> </script> -->
     <script src="scripts/order.js"> </script>
 
     <!-- Linking Ionicons -->
