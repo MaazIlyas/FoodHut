@@ -20,8 +20,8 @@ let products = [
         inCart: 0
     },
     {
-        name: 'Spaghetti Balognese',
-        tag: 'spaghettibalognese',
+        name: 'Spaghetti Bolognese',
+        tag: 'spaghettibolognese',
         price: 14,
         inCart: 0
     },
@@ -96,6 +96,7 @@ function onLoadCartShow() {
     {
         // document.querySelectorAll('.cart span')[2].textContent = productCost; //showing the cart cost on menu
         document.querySelector('.cart span').textContent = productNumbers; //if cart count is present it will be shown at cart count.
+        document.querySelector('.cart2 span').textContent = productNumbers; //For second cart 
     }
 }
 
@@ -213,7 +214,7 @@ function displayCart() {
             productContainer.innerHTML += `
             <div class="product col-md-5">
                 <ion-icon name="close-circle"></ion-icon>
-                <img src="./images/catalogue/${item.tag}.jpg" width="40">
+                <img src="./images/menu/${item.tag}.jpg" width="40">
                 <span class="productFonts">${item.name}</span>
             </div>
             <div class="price col-md-2">$${item.price}.00</div>
